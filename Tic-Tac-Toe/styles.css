@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+}
+
+/*h1 styles */
+h1 {
+  font-family: "Titan One", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+}
+
+#tic {
+  color: #026873;
+}
+
+#tac {
+  color: #f2cb05;
+}
+
+#toe {
+  color: #f67f9f;
+}
+
+/*start button */
+#start-btn {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f2cb05;
+  border: 1px solid #f2cb05;
+  border-radius: 12px;
+  padding: 15px 30px;
+  color: #585859;
+  font-size: 1.1rem;
+  display: block;
+  margin: 25px auto 30px;
+}
+
+/*pop-up windows */
+#backdrop {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: black;
+  z-index: 1;
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  width: 40vw;
+  height: 360px;
+  background: white;
+  padding: 10px;
+  margin: 150px auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  text-align: center;
+  border-radius: 15px;
+  display: none;
+}
+
+.popup h2 {
+  font-family: "Titan One", sans-serif;
+  color: #026873;
+  font-weight: 300;
+}
+
+.popup p,
+.winner,
+#p1,
+#p2 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#p1,
+#p2 {
+  color: #585859;
+}
+
+.popup ol {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 100;
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+}
+
+.popup li {
+  padding: 5px;
+}
+
+#got-it-btn {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f2cb05;
+  border: 1px solid #f2cb05;
+  border-radius: 12px;
+  padding: 10px 30px;
+  color: #585859;
+  font-size: 1.1rem;
+  display: block;
+  margin: 40px auto 30px;
+}
+
+.player-names {
+  position: fixed;
+  width: 40vw;
+  height: 340px;
+  border-radius: 15px;
+  background: white;
+  padding: 10px;
+  margin: 150px auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  font-family: "Ubuntu", sans-serif;
+  display: none;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+#pIn1,
+#pIn2 {
+  width: 90%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  margin: auto;
+}
+
+#pIn1:focus,
+#pIn2:focus {
+  border: 2px solid #026873;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 350px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.counter {
+  height: 50px;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#p1count {
+  display: flex;
+  margin: 0;
+}
+
+#p2count {
+  display: flex;
+  margin: 0;
+}
+
+.p1-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.p2-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+#p1count {
+  font-family: "Titan One", sans-serif;
+  color: #585859;
+  font-size: 2rem;
+  align-items: center;
+  margin-left: 15px;
+}
+
+#p2count {
+  font-family: "Titan One", sans-serif;
+  color: #585859;
+  font-size: 2rem;
+  align-items: center;
+  margin-right: 25px;
+}
+
+#submit-btn {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f2cb05;
+  border: 1px solid #f2cb05;
+  border-radius: 12px;
+  padding: 10px 30px;
+  color: #585859;
+  font-size: 1.1rem;
+  display: block;
+  margin: 40px auto 30px;
+}
+
+.winner {
+  position: fixed;
+  width: 40vw;
+  height: 340px;
+  background: white;
+  padding: 80px 10px;
+  margin: 150px auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  font-family: "Ubuntu", sans-serif;
+  display: none;
+  text-align: center;
+  border-radius: 15px;
+}
+
+#winner {
+  margin-bottom: 40px;
+}
+
+#congrats {
+  font-family: "Titan One", sans-serif;
+  font-size: 1.2rem;
+  color: #026873;
+  font-weight: 300;
+}
+
+#restart-btn {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f2cb05;
+  border: 1px solid #f2cb05;
+  border-radius: 12px;
+  padding: 15px 30px;
+  color: #585859;
+  font-size: 1.1rem;
+  display: none;
+  margin: auto;
+}
+
+/*wrapper-container styles */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#container {
+  height: 530px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 50%;
+  background-color: #d2f2ee;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*gameboard styles */
+#O,
+#X {
+  font-family: "Titan One", sans-serif;
+}
+
+#O {
+  font-size: 3.5rem;
+  display: none;
+  color: #585859;
+  text-align: center;
+}
+
+#X {
+  font-size: 3.5rem;
+  display: none;
+  color: #585859;
+  text-align: center;
+}
+
+.board {
+  width: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #f67f9f;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 5px;
+  font-family: "Titan One", sans-serif;
+  text-align: center;
+  align-content: center;
+  font-size: 5rem;
+  color: #585859;
+}
+
+@media only screen and (max-width: 380px) {
+  .popup {
+    position: fixed;
+    width: 70vw;
+    height: 530px;
+  }
+
+  #container {
+    height: 530px;
+    border-radius: 12px;
+    max-width: 100%;
+    background-color: #d2f2ee;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .winner {
+    position: fixed;
+    width: 80vw;
+    height: 340px;
+  }
+}

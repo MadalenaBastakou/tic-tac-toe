@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Titan+One&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <h1>
+      <span id="tic">Tic</span>
+      <span id="tac">Tac</span>
+      <span id="toe">Toe</span>
+    </h1>
+    <div class="popup">
+      <h2>Welcome!</h2>
+      <p>Rules for Tic-Tac-Toe</p>
+      <ol>
+        <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+        <li>Players take turns putting their marks in empty squares.</li>
+        <li>
+          The first player to get 3 of her marks in a row (up, down, across, or
+          diagonally) is the winner.
+        </li>
+        <li>
+          When all 9 squares are full, the game is over. If no player has 3
+          marks in a row, the game ends in a tie.
+        </li>
+      </ol>
+      <button id="got-it-btn">I got it</button>
+    </div>
+    <div class="player-names">
+      <p>Enter player names</p>
+      <input type="text" id="pIn1" placeholder="Enter player 1" value="" />
+      <input type="text" id="pIn2" placeholder="Enter player 2" value="" />
+      <button id="submit-btn">Submit</button>
+    </div>
+    <div id="wrapper">
+      <div id="container">
+        <button id="start-btn">Start</button>
+        <div class="info">
+          <div class="p1-info">
+            <div id="O">O</div>
+            <div id="p1"></div>
+          </div>
+          <div class="p2-info">
+            <div id="X">X</div>
+            <div id="p2"></div>
+          </div>
+        </div>
+        <div class="board">
+          <div class="cell" data-index="0"></div>
+          <div class="cell" data-index="1"></div>
+          <div class="cell" data-index="2"></div>
+          <div class="cell" data-index="3"></div>
+          <div class="cell" data-index="4"></div>
+          <div class="cell" data-index="5"></div>
+          <div class="cell" data-index="6"></div>
+          <div class="cell" data-index="7"></div>
+          <div class="cell" data-index="8"></div>
+        </div>
+        <div class="counter">
+          <p id="p1count"></p>
+          <p id="p2count"></p>
+        </div>
+        <div class="winner">
+          <p id="congrats"></p>
+          <p id="winner"></p>
+          <button id="restart-btn">Restart</button>
+        </div>
+      </div>
+    </div>
+    <audio id="win-audio" src="./ta-da_yrvBrlS.mp3"></audio>
+    <audio id="lose-audio" src="./sadtrombone.swf.mp3"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
