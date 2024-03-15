@@ -16,7 +16,11 @@ This is a simple implementation of the classic Tic Tac Toe game using HTML, CSS,
 4. If all cells are filled and no player has three marks in a row, the game ends in a draw.
 5. Click the "Restart" button to start a new game.
 
+## Screenshot
+
+<img src="https://github.com/MadalenaBastakou/tic-tac-toe/blob/main/Tic-Tac-Toe/mady-tic-tac-toe.netlify.app_.png"/>
+
 ## Demo
 
-You can play a live demo of the game [here](https://mady-tic-tac-toe.netlify.app/).
+You can see a live demo of the game [here](https://mady-tic-tac-toe.netlify.app/).
 
